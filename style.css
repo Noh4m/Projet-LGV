@@ -94,14 +94,15 @@
 }
 
 #trajet {
-    height: 100vh;
+    height: 100%;
     width: 50%;
     background-color: #F1F1F1;
     border-right: 2px solid #425FC6;
+
 }
 
 #trajet h1 {
-    margin-top: 50px;
+    margin-top: 35px;
     margin-left: 90px;
     font-family: var(--sen-font-family);
     font-weight: 700;
@@ -120,10 +121,109 @@
     margin-left: 150px;
 }
 
+#trajet h4 {
+    margin-top: 30px;
+    margin-left: 250px;
+}
+
+#trajet h4:last-child {
+    padding-bottom: 20px;
+}
+
+
+
 
 #intro {
+    height: 100%;
+    width: 50%;
+    background-color: #F1F1F1;
+    overflow: hidden;
+}
+
+#intro h1 {
+    margin-top: 35px;
+    margin-left: 90px;
+    font-family: var(--sen-font-family);
+    font-weight: 700;
+    font-size: var(--title-font-size);
+
+}
+
+#intro p {
+    margin-top: 100px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 500px;
+    font-size: 1.5em;
+}
+
+
+#intro p span {
+    color: var(--main-color);
+    font-weight: 700;
+}
+
+#intro svg {
+    position: relative;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    transform: translateX(-50%);
+    margin-top: 100px;
+    padding-bottom: 44px;
+}
+
+#info {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#france {
     height: 100vh;
     width: 50%;
     background-color: #F1F1F1;
+
+}
+
+#france h1 {
+    margin-top: 35px;
+    margin-left: 90px;
+    font-family: var(--sen-font-family);
+    font-weight: 700;
+    font-size: var(--title-font-size);
+
+}
+
+.contained {
+    display: flex;
+    align-items: center;
+    margin-top: 50px;
+    margin-left: 90px;
+}
+
+.contained p {
+    margin-left: 30px;
+    font-size: 1.7vw;
+}
+
+
+
+
+#japon {
+    float: right;
+    height: 100vh;
+    width: 50%;
+    background-color: #425FC6;
+    border-right: 2px solid #425FC6;
+    color: #FFF;
+}
+
+#japon h1 {
+    margin-top: 35px;
+    margin-left: 90px;
+    font-family: var(--sen-font-family);
+    font-weight: 700;
+    font-size: var(--title-font-size);
 
 }
