@@ -1,0 +1,129 @@
+:root {
+    /* COLOR */
+
+    /* Main color of the site */
+    --main-color: #425FC6;
+
+    /* FONT */
+
+    /* Font color */
+    --font-color: #000000;
+    /* Font use in the site */
+    --main-font-family: 'Spinnaker', sans-serif;
+    --sen-font-family: 'Sen', sans-serif;
+    /* Font Size */
+    --title-font-size: 3em;
+    --subtitle-font-size: 2.5em;
+
+}
+
+* {
+    font-family: var(--main-font-family);
+}
+
+#heroBanner {
+    background: var(--main-color);
+    height: 100vh;
+
+}
+
+#heroBanner nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+}
+
+
+#heroBanner nav span {
+    font-size: var(--title-font-size);
+    color: var(--font-color);
+    width: 100px;
+    padding-top: 40px;
+    margin-left: 90px;
+}
+
+#heroBanner nav button {
+    float: right;
+    height: 50px;
+    width: 150px;
+    margin-top: 40px;
+    margin-right: 90px;
+    border-radius: 40px;
+    border: none;
+    background-color: var(--font-color);
+    color: #FFF;
+    font-size: 1.2em;
+}
+
+#heroBanner h2:nth-child(2) {
+    display: flex;
+    float: left;
+    margin-top: 250px;
+    padding-left: 90px;
+    padding-top: 5px;
+    border-top: solid 2px black;
+    font-size: 3.5em;
+}
+
+#heroBanner h2:nth-child(3) {
+    display: flex;
+    float: right;
+    padding-right: 90px;
+    padding-top: 5px;
+    margin-top: 20px;
+    border-bottom: solid 2px black;
+    font-size: 3.5em;
+}
+
+
+#heroBanner p:nth-child(4) {
+    display: flex;
+    margin-left: 90px;
+    margin-top: 630px;
+}
+
+#heroBanner p:nth-child(5) {
+    display: flex;
+    float: right;
+    margin-right: 90px;
+}
+
+#roadMap {
+    display: flex;
+}
+
+#trajet {
+    height: 100vh;
+    width: 50%;
+    background-color: #F1F1F1;
+    border-right: 2px solid #425FC6;
+}
+
+#trajet h1 {
+    margin-top: 50px;
+    margin-left: 90px;
+    font-family: var(--sen-font-family);
+    font-weight: 700;
+    font-size: var(--title-font-size);
+}
+
+#trajet p:nth-child(2) {
+    font-size: var(--subtitle-font-size);
+    padding-top: 100px;
+    margin-left: 400px;
+}
+
+#trajet p {
+    font-size: var(--subtitle-font-size);
+    padding-top: 100px;
+    margin-left: 150px;
+}
+
+
+#intro {
+    height: 100vh;
+    width: 50%;
+    background-color: #F1F1F1;
+
+}

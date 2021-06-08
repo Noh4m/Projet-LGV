@@ -1,95 +1,54 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-   
-   <link rel="shortcut icon" href="#">
- <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.3.2/chart.min.js"></script>
-    <title>ChartJs</title>
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="reset.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Spinnaker&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Sen:wght@400;700;800&display=swap" rel="stylesheet">
+    <title>Document</title>
 </head>
+
 <body>
-<div class="chart-container">
-    <canvas id="graph1"></canvas>
-</div>
 
-<script>
-var ctx = document.getElementById('graph1').getContext('2d');
 
-var data = {
-    labels: ['France', 'Japon', 'Yellow', 'Green', 'Purple', 'Orange'],
-       datasets:[
-          {
-            label:'France',
-              data: [12,30,11,50,35,6],
-              backgroundColor: [
-                '#F71E1E',
-                '#AD10E0',
-                '#FFC80F',
-                '#E06810',
-                '#11D9F8',
-                '#11F8A4'
-            ]},
-           {
-               label: 'Japon',
-               data: [1,10,6,8,20,23],
-               backgroundColor:[
-                   '#ffed99',
-                   '#f6b8b8',
-                   '#ac66cc',
-                   '#3b14a7',
-                   '#21094e',
-                   '#a5e1ad',
+    <main>
+        <section id="heroBanner">
+            <nav>
+                <span>2021</span>
+                <button>Button</button>
+            </nav>
+            <h2>POURQUOI LES TRAINS FRANÇAIS</h2>
+            <h2>SONT TOURJOURS EN RETARDS ?</h2>
 
-               ]
-               
-           } 
-       ]
-    }
 
-var options = {
-     y: {
-         type: 'linear',
-            min: 0,
-            max: 60
-            },
-    
-    plugins: {
-            title: {
-                display: true,
-                text: 'Nombre total de passagers transportés en milliard (entre le debut de creation des lignes et 2010',
-                font: {
-                        size: 20
-                    }
-            },
-            legend: {
-                labels: {
-                    // This more specific font property overrides the global property
-                    font: {
-                        size: 14
-                    }
-                }
-            }
-        }
-}
+            <p>Deux trains, <br> deux ambiances.</p>
+            <p>Groupe 3</p>
+        </section>
+        <section id="roadMap">
+            <div id="trajet">
+                <h1>LE TRAJET</h1>
+                    <p>Vue Mondiale</p>
+                    <p>Introduction</p>
+                    <p>Introduction</p>
+                    <p>Introduction</p>
+                </div>
 
-var config =  {
-    type: 'bar',
-    data: data,
-    options: options
-    }
 
-var graph1 = new Chart(ctx, config)
-</script>
-<style>
-.chart-container{
-    position: relative;
-    margin: auto;
-    height: 50vh;
-    width: 50vw;
-}
-</style>
+
+
+            </div>
+            <div id="intro"></div>
+
+        </section>
+    </main>
+
 
 </body>
+
 </html>
